@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>登录</title>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- 引入 Bootstrap -->
+      <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+      
+   </head>
+   
+   <body >
+
+      <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+      <script src="jquery.js"></script>
+      <!-- 包括所有已编译的插件 -->
+      <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	  
+<form class="form-horizontal " role="form" action="check_login.php" method="post" >
+  <div class="form-group">
+    <label for="firstname" class="col-sm-2 control-label" >用户名</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control"   name="username" style="width:360px;"  placeholder="请输入用户名">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="lastname" class="col-sm-2 control-label">密码</label>
+    <div class="col-sm-10">
+      <input  class="form-control" type="password" name="password" style="width:360px;" placeholder="请输入密码">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox">请记住我
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default" value="登录" name="submit">登录</button>
+    </div>
+  </div>
+</form>
+
+   </body>
+  
+</html>
